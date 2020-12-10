@@ -13,7 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_12_09_191732) do
 
   create_table "searches", force: :cascade do |t|
-    t.integer "flickr_user"
+    t.string "flickr_user"
+    t.boolean "valid_request"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
